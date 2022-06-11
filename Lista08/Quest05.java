@@ -31,7 +31,7 @@ public class Quest05 {
 		}
 
 		while(true) {
-			System.out.print("Informe 'A' para acessar informações na agenda, 'I' para incluir, \n"
+			System.out.print("Informe 'A' para acessar informaÃ§Ãµes na agenda, 'I' para incluir, \n"
 					+ "'T' para acessar todos os compromissos ou 'F' para fechar a agenda: ");
 			char ch = ent.next().charAt(0);
 			
@@ -39,7 +39,7 @@ public class Quest05 {
 				break;
 			
 			else if (ch == 'i' || ch == 'I') {
-				System.out.print("\nInforme o mês pelo seu respectivo número: ");
+				System.out.print("\nInforme o mÃªs pelo seu respectivo nÃºmero: ");
 				mes = ent.nextInt();
 				
 				if(mes >= 1 && mes <= 12) {
@@ -47,25 +47,25 @@ public class Quest05 {
 					dia = ent.nextInt();
 					
 					if(dia > 0 && dia <= agenda[mes - 1].length) {
-						System.out.print("Informe a hora(somente hora exata, das 9 às 16): ");
+						System.out.print("Informe a hora(somente hora exata, das 9 Ã s 16): ");
 						hora = ent.nextInt();
 						
 						if(hora >= 9 && hora <= 16) {
 							ent.nextLine();
-							System.out.printf("%nAgenda, mês %d, dia %d, %d horas...%nEscreva o compromisso: ", mes, dia, hora);
+							System.out.printf("%nAgenda, mÃªs %d, dia %d, %d horas...%nEscreva o compromisso: ", mes, dia, hora);
 							agenda[mes - 1][dia - 1][hora - 9] = ent.nextLine();
 							System.out.println();
 						}else
 							System.out.println("\nHora incorreta.\nVoltando ao inicio.\n");
 						
 					}else
-						System.out.println("\nDia inválido.\nRepita a ação.\n");
+						System.out.println("\nDia invÃ¡lido.\nRepita a aÃ§Ã£o.\n");
 					
 				}else
-					System.out.println("\nMês inválido.\nFaça novamente\n");
+					System.out.println("\nMÃªs invÃ¡lido.\nFaÃ§a novamente\n");
 				
 			}else if (ch == 'a' || ch == 'A') {
-				System.out.print("\nInforme o mês pelo seu respectivo número: ");
+				System.out.print("\nInforme o mÃªs pelo seu respectivo nÃºmero: ");
 				mes = ent.nextInt();
 				
 				if(mes >= 1 && mes <= 12) {
@@ -73,11 +73,11 @@ public class Quest05 {
 					dia = ent.nextInt();
 					
 					if(dia > 0 && dia <= agenda[mes - 1].length) {
-						System.out.print("Informe a hora(somente hora exata, das 9 às 16): ");
+						System.out.print("Informe a hora(somente hora exata, das 9 Ã s 16): ");
 						hora = ent.nextInt();
 						
 						if(hora >= 9 && hora <= 16) {
-							System.out.printf("%nAgenda, mês %d, dia %d, %d horas...%nImprindo informações...%n", mes, dia, hora);
+							System.out.printf("%nAgenda, mÃªs %d, dia %d, %d horas...%nImprimindo informaÃ§Ãµes...%n", mes, dia, hora);
 							System.out.println("_________________________________________________________________________________________________________________");
 							System.out.println("Compromisso agendado: " + agenda[mes - 1][dia - 1][hora - 9]);
 							System.out.println("_________________________________________________________________________________________________________________\n");
@@ -85,10 +85,10 @@ public class Quest05 {
 							System.out.println("\nHora incorreta.\nVoltando ao inicio.\n");
 						
 					}else
-						System.out.println("\nDia inválido.\nRepita a ação.\n");
+						System.out.println("\nDia invÃ¡lido.\nRepita a aÃ§Ã£o.\n");
 					
 				}else
-					System.out.println("\nMês inválido.\nFaça novamente\n");
+					System.out.println("\nMÃªs invÃ¡lido.\nFaÃ§a novamente\n");
 				
 			}else if(ch == 't' || ch == 'T') {
 				for (int i = 0; i < agenda.length; i++) {
@@ -96,7 +96,7 @@ public class Quest05 {
 						for (int j2 = 0; j2 < agenda[i][j].length; j2++) {
 							if(!agenda[i][j][j2].equals("")) {
 								System.out.println("_________________________________________________________________________________________________________________");
-								System.out.printf("%nAgenda, mês %d, dia %d, %d horas...%nCompromisso agendado: %s%n", (i + 1), (j + 1), (j2 + 9), agenda[i][j][j2]);
+								System.out.printf("%nAgenda, mÃªs %d, dia %d, %d horas...%nCompromisso agendado: %s%n", (i + 1), (j + 1), (j2 + 9), agenda[i][j][j2]);
 								System.out.println("_________________________________________________________________________________________________________________\n");
 							}
 						}
@@ -104,7 +104,7 @@ public class Quest05 {
 				}
 				System.out.println();
 			}else
-				System.out.println("\nInformação inválida...\nTente novamente.\n");
+				System.out.println("\nInformaÃ§Ã£o invÃ¡lida...\nTente novamente.\n");
 		}
 		
 		System.out.println("\nAgenda fechada.");
