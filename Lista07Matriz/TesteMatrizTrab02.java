@@ -3,7 +3,7 @@ package Lista07Matriz;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TesteMatrizExemp02 {
+public class TesteMatrizTrab02 {
 	public static void main(String[] args) {
 		
 		Scanner ent = new Scanner(System.in);
@@ -22,16 +22,16 @@ public class TesteMatrizExemp02 {
 			
 			ent.nextLine();
 			for(int j = 0; j < numFilhos[i].length; j++) {
-				numFilhos[i][j] = new String[2];// Posição 2 pois é o nome e a idade
+				numFilhos[i][j] = new String[2];// PosiÃ§Ã£o 2 pois Ã© o nome e a idade
 				
 				for(int k = 0; k < numFilhos[i][j].length; k++) {
 										
 					if(k == 0) {
-						System.out.print("\nDigite o nome do " + (j + 1)+ "º filho:");
+						System.out.print("\nDigite o nome do " + (j + 1)+ "Âº filho:");
 						numFilhos[i][j][k] = ent.nextLine();
 					}
 					else {
- 						System.out.print("Digite a idade do " + (j + 1)+ "º filho:");
+ 						System.out.print("Digite a idade do " + (j + 1)+ "Âº filho:");
 						numFilhos[i][j][k] = ent.nextLine();
 					}
 					
