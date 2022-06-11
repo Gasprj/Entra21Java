@@ -2,7 +2,7 @@ package Lista07Matriz;
 
 import java.util.Scanner;
 
-public class TesteMatrizExemp01 {
+public class TesteMatrizTrab01 {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
