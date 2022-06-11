@@ -22,7 +22,7 @@ public class Exerc16 {
 			estCivil = '0';
 			
 			System.out.print("Informe seu nome ou 'sair' para encerrar: ");
-			nome = ent.next();
+			nome = ent.nextLine();
 			
 			if(nome.equalsIgnoreCase("sair"))
 				break;
@@ -33,15 +33,15 @@ public class Exerc16 {
 				System.out.print("Informe sua idade: ");
 				idade = ent.nextInt();
 				
-				String id = idade <= 0 || idade > 100 ? "Idade inv·lida\n\n" : "\n";
+				String id = idade <= 0 || idade > 100 ? "Idade inv√°lida\n\n" : "\n";
 				System.out.print(id);
 			}
 			
 			while(!(salario > 0)) {
-				System.out.print("Informe seu sal·rio: ");
+				System.out.print("Informe seu sal√°rio: ");
 				salario = ent.nextDouble();
 				
-				String sl = salario <= 0 ? "Sal·rio inv·lido\n\n" : "\n";
+				String sl = salario <= 0 ? "Sal√°rio inv√°lido\n\n" : "\n";
 				System.out.print(sl);
 			}
 			while(Character.toLowerCase(sexo) != 'f' && Character.toLowerCase(sexo) != 'm') {
@@ -58,13 +58,13 @@ public class Exerc16 {
 					System.out.println();
 					break;
 				default:
-					System.out.println("InformaÁ„o inv·lida\n");
+					System.out.println("Informa√ß√£o inv√°lida\n");
 				}	
 			}
 			while(Character.toLowerCase(estCivil) != 's' && Character.toLowerCase(estCivil) != 'v' 
 				  && Character.toLowerCase(estCivil) != 'c' && Character.toLowerCase(estCivil) != 'd') {
 				System.out.print("Informe seu estado civil digitando 's' para 'solteiro', "
-								 + "\n'c' para 'casado', 'v' para 'vi˙vo' ou 'd' para 'divorciado':");
+								 + "\n'c' para 'casado', 'v' para 'vi√∫vo' ou 'd' para 'divorciado':");
 				estCivil = ent.next().charAt(0);
 				
 				if(Character.toLowerCase(sexo) == 'm') {
@@ -79,10 +79,10 @@ public class Exerc16 {
 						ec = "Divorciado";
 						break;
 					case 'v':
-						ec = "Vi˙vo";
+						ec = "Vi√∫vo";
 						break;
 					default:
-						System.out.println("InformaÁ„o inv·lida\n");
+						System.out.println("Informa√ß√£o inv√°lida\n");
 					}
 				}else if(Character.toLowerCase(sexo) == 'f') {
 					switch(Character.toLowerCase(estCivil)) {
@@ -96,23 +96,24 @@ public class Exerc16 {
 						ec = "Divorciada";
 						break;
 					case 'v':
-						ec = "Vi˙va";
+						ec = "Vi√∫va";
 						break;
 					default:
-						System.out.println("InformaÁ„o inv·lida\n");
+						System.out.println("Informa√ß√£o inv√°lida\n");
 					}
 				}
 			}
 			
-			String result = "	Nome: " + nome + "\n	Idade: " + idade + "\n	Sal·rio: "
+			String result = "	Nome: " + nome + "\n	Idade: " + idade + "\n	Sal√°rio: "
 							+ salario + "\n	Sexo: " + sx + "\n	Estado civil: " + ec;
 			System.out.println("\n--------------------------------------------");
 			System.out.println(result);
 			System.out.println("--------------------------------------------\n");
 			System.out.println("-NOVA ENTRADA DE DADOS-");
+			ent.nextLine();
 		}
 		
-		System.out.println("AtÈ a prÛxima!");
+		System.out.println("At√© a pr√≥xima!");
 		
 		ent.close();	
 			
