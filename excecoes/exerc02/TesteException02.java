@@ -26,7 +26,6 @@ public class TesteException02 {
 				ent.nextLine();
 				continue;
 			}
-			
 				break;
 		}
 		
