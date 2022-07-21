@@ -22,7 +22,7 @@ public class TesteException02 {
 				y = ent.nextInt();
 				r = x / y;
 			} catch (InputMismatchException | ArithmeticException e) {
-				System.out.println("\nDigite somente números inteiros diferentes de 0.");
+				System.out.println("\nDigite somente números inteiros diferentes de 0.\n");
 				ent.nextLine();
 				continue;
 			}
