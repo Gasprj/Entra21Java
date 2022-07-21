@@ -16,21 +16,18 @@ public class TesteException02 {
 
 		while(true) {
 			try {
-				System.out.print("Informe o 1º valor: ");
+				System.out.print("Informe o 1Âº valor: ");
 				x = ent.nextInt();
-				System.out.print("Informe o 2º valor: ");
+				System.out.print("Informe o 2Âº valor: ");
 				y = ent.nextInt();
 				r = x / y;
 			} catch (InputMismatchException | ArithmeticException e) {
-				System.out.println("\nDigite somente números inteiros diferentes de 0.");
+				System.out.println("\nDigite somente nÃºmeros inteiros diferentes de 0.");
 				ent.nextLine();
 				continue;
 			}
 			
-//			System.out.println("\nO resultado da divisão é " + r + "\n");
-//			if((x > 0 || x < 0) && (y > 0 || y < 0))
 				break;
-			
 		}
 		
 		System.out.println("Fim!");
