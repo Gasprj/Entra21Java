@@ -29,6 +29,7 @@ public class TesteException02 {
 			break;
 		}
 		
+		System.out.println("\nO resultado da divisão é " + r + "\n");
 		System.out.println("Fim!");
 		ent.close();
 		
