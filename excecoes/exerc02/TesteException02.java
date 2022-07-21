@@ -26,7 +26,7 @@ public class TesteException02 {
 				ent.nextLine();
 				continue;
 			}
-				break;
+			break;
 		}
 		
 		System.out.println("Fim!");
